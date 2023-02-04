@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17dae1f014.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav id="navBar" class="navbar-white">
+            <div class="header-left">
+                <img src="images/logo.png" class="logo">
+                <ul class="nav-links">
+                    <button class="hotel_btn" type="button">
+                        <span class="text_list" >Hotel List</span>
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </button>
+                    <li><a href="index.html" class="active">Popular Homestays</a></li>
+                    <li><a href="#">Fast Booking</a></li>
+                    <li><a href="house.html">Rewards</a></li>
+                </ul>
+            </div>
+            <div class="header-hidden">
+
+            </div>
+            <div class="header-right">
+                <ul class="nav-btns">
+                    <li></li>
+                    <li><button class="bus-btn" type="button"><span class="bus-span">Contact Us</span></button></li>
+                    <li><a href="#" class="register-btn">Register Now</a></li>
+                    <li><i class="fas fa-bars" onclick="togglebtn()"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Find Your Next Stay</h1>
+            <div class="search-bar">
+                <div class="tabs_nav_scroll">
+                    <div class="tabs_nav" role="tablist">
+                        <div class="tabs_active_bar"></div>
+                        <div class="tab_active_item" id="tab-hourly"><i class="fa-regular fa-clock"></i>Theo giờ</div>
+                        <div class="tab_item" id="tab-overnight"><i class="fa-regular fa-moon"></i>Qua đêm</div>
+                        <div class="tab_item" id="tab-daily"><i class="fa-regular fa-calendar"></i>Theo ngày</div>
+                    </div>
+                </div>
+                <form>
+                    <div class="location-input">
+                        <label>Location</label>
+                        <input type="text" placeholder="Where are you going?">
+                    </div>
+                    <div>
+                        <label>Check in</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label>Check out</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label>Guest</label>
+                        <input type="text" placeholder="Add Guest">
+                    </div>
+                    <button type="submit" formaction="listing.html"><img src="images/search.png"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="sub-title">Exclusives</h2>
+        <div class="exclusives">
+            <div>
+                <img src="images/image-1.png">
+                <span>
+                    <h3>London</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-2.png">
+                <span>
+                    <h3>Switzerland</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-3.png">
+                <span>
+                    <h3>Australia</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-4.png">
+                <span>
+                    <h3>France</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-5.png">
+                <span>
+                    <h3>Amsterdam</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-6.png">
+                <span>
+                    <h3>Netherland</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-7.png">
+                <span>
+                    <h3>New York</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-8.png">
+                <span>
+                    <h3>Chicago</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-9.png">
+                <span>
+                    <h3>San Francisco</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-10.png">
+                <span>
+                    <h3>Shanghai</h3>
+                    <p>Start @ $250</p>
+                </span>
+            </div>
+        </div>
+        <h2 class="sub-title">Sale Off</h2>
+        <div class="trending">
+            <div>
+                <img src="images/dubai.png">
+                <h3>Dubai</h3>
+            </div>
+            <div>
+                <img src="images/new-york.png">
+                <h3>New York</h3>
+            </div>
+            <div>
+                <img src="images/paris.png">
+                <h3>Paris</h3>
+            </div>
+            <div>
+                <img src="images/new-delhi.png">
+                <h3>New Delhi</h3>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h3>Experiences is gold.<br>Let share it now!</h3>
+            <p>Những điều thú vị<br> có thể bạn chưa biết.</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+
+        <h2 class="sub-title">Explore with Stelio</h2>
+        <div class="stories">
+            <div>
+                <img src="images/explore-1.jpg"></img>
+                <p>Popular European countries with a budget of just $10,000</p>
+            </div>
+            <div>
+                <img src="images/explore-2.jpg"></img>
+                <p>Traveled more than 100 Countries in less than a year</p>
+            </div>
+            <div>
+                <img src="images/explore-3.jpg"></img>
+                <p>Best experience you get while traveling to Thailand</p>
+            </div>
+        </div>
+        <a href="#" class="start-btn">Start making money</a>
+
+        <div class="about-msg">
+            <h2>About Staybnb</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam libero sunt autem, quisquam tempora
+                veritatis, itaque quas pariatur inventore quasi voluptatum consectetur! Voluptatum saepe quos odio
+                explicabo qui numquam maiores.</p>
+        </div>
+
+        <div class="footer">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2023, Easy Tutorials.</p>
+        </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navBar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+
+</html>
