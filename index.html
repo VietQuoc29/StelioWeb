@@ -14,10 +14,19 @@
             <div class="header-left">
                 <img src="images/logo.png" class="logo">
                 <ul class="nav-links">
-                    <button class="hotel_btn" type="button">
-                        <span class="text_list" >Hotel List</span>
-                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                    </button>
+                    <div class="dropdown">
+                        <button class="hotel-btn" type="button" onclick="Dropdown()">
+                            <span class="text-list">Hotel List</span>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#">Stelio Room</a>
+                            <a href="#">Best Price</a>
+                            <a href="#">Great Deals</a>
+                            <a href="#">New Hotels</a>
+                            <a href="#">High Rate Hotels</a>
+                        </div>
+                    </div>
                     <li><a href="index.html" class="active">Popular Homestays</a></li>
                     <li><a href="#">Fast Booking</a></li>
                     <li><a href="house.html">Rewards</a></li>
@@ -38,17 +47,24 @@
         <div class="container">
             <h1>Find Your Next Stay</h1>
             <div class="search-bar">
-                <div class="tabs_nav_scroll">
-                    <div class="tabs_nav" role="tablist">
-                        <div class="tabs_active_bar"></div>
-                        <div class="tab_active_item" id="tab-hourly"><i class="fa-regular fa-clock"></i>Theo giờ</div>
-                        <div class="tab_item" id="tab-overnight"><i class="fa-regular fa-moon"></i>Qua đêm</div>
-                        <div class="tab_item" id="tab-daily"><i class="fa-regular fa-calendar"></i>Theo ngày</div>
+                <div class="tabs-nav-scroll">
+                    <div class="tabs-nav">
+                        <div id="tab-active-bar"></div>
+                        <div class="tab-active-item" id="tab-hourly" onclick="Picktype(this)">
+                            <i class="fa-solid fa-clock"></i>Theo giờ
+                        </div>
+                        <div class="tab-item" id="tab-overnight" onclick="Picktype(this)">
+                            <i class="fa-regular fa-moon"></i>Qua đêm
+                        </div>
+                        <div class="tab-item" id="tab-daily" onclick="Picktype(this)">
+                            <i class="fa-regular fa-calendar"></i>Theo ngày
+                        </div>
                     </div>
                 </div>
                 <form>
                     <div class="location-input">
                         <label>Location</label>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
                         <input type="text" placeholder="Where are you going?">
                     </div>
                     <div>
@@ -74,113 +90,164 @@
             <div>
                 <img src="images/image-1.png">
                 <span>
-                    <h3>London</h3>
+                    <h3>Near you</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-2.png">
                 <span>
-                    <h3>Switzerland</h3>
+                    <h3>Hot</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-3.png">
                 <span>
-                    <h3>Australia</h3>
+                    <h3>Flash Sale</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-4.png">
                 <span>
-                    <h3>France</h3>
+                    <h3>Special Offer</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-5.png">
                 <span>
-                    <h3>Amsterdam</h3>
+                    <h3>New</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-6.png">
                 <span>
-                    <h3>Netherland</h3>
+                    <h3>Couple Hotels</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-7.png">
                 <span>
-                    <h3>New York</h3>
+                    <h3>Travel Hotels</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-8.png">
                 <span>
-                    <h3>Chicago</h3>
+                    <h3>Luxury</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-9.png">
                 <span>
-                    <h3>San Francisco</h3>
+                    <h3>Hostel</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-10.png">
                 <span>
-                    <h3>Shanghai</h3>
+                    <h3>Motel</h3>
                     <p>Start @ $250</p>
                 </span>
             </div>
         </div>
         <h2 class="sub-title">Sale Off</h2>
-        <div class="trending">
-            <div>
-                <img src="images/dubai.png">
-                <h3>Dubai</h3>
+        <div class="saleoff">
+            <div class="sale-item">
+                <img src="images/villa.png">
+                <h3>Sol Villa</h3>
+                <div class="addr-item">
+                    <p>Hoi An</p>
+                    <i class="fa-solid fa-location-dot icon-address"></i>
+                </div>
+                <div class="rate-item">
+                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                    <i class="fa-solid fa-star icon-rating"></i>
+                </div>
+                <div class="price-item">
+                    <p>1.500.000Đ</p>
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
             </div>
-            <div>
-                <img src="images/new-york.png">
-                <h3>New York</h3>
+            <div class="sale-item">
+                <img src="images/homestay.png">
+                <h3>Con Mèo Béo Home & Chill</h3>
+                <div class="addr-item">
+                    <p>Da Lat</p>
+                    <i class="fa-solid fa-location-dot icon-address"></i>
+                </div>
+                <div class="rate-item">
+                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                    <i class="fa-solid fa-star icon-rating"></i>
+                </div>
+                <div class="price-item">
+                    <p>1.500.000Đ</p>
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
             </div>
-            <div>
-                <img src="images/paris.png">
-                <h3>Paris</h3>
+            <div class="sale-item">
+                <img src="images/hostel.png">
+                <h3>Fine9 Hostel</h3>
+                <div class="addr-item">
+                    <p>Phu Quoc</p>
+                    <i class="fa-solid fa-location-dot icon-address"></i>
+                </div>
+                <div class="rate-item">
+                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                    <i class="fa-solid fa-star icon-rating"></i>
+                </div>
+                <div class="price-item">
+                    <p>1.500.000Đ</p>
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
             </div>
-            <div>
-                <img src="images/new-delhi.png">
-                <h3>New Delhi</h3>
+            <div class="sale-item">
+                <img src="images/novotel.png">
+                <h3>Novotel</h3>
+                <div class="addr-item">
+                    <p>Sai Gon</p>
+                    <i class="fa-solid fa-location-dot icon-address"></i>
+                </div>
+                <div class="rate-item">
+                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                    <i class="fa-solid fa-star icon-rating"></i>
+                </div>
+                <div class="price-item">
+                    <p>1.500.000Đ</p>
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
             </div>
         </div>
 
         <div class="cta">
             <h3>Experiences is gold.<br>Let share it now!</h3>
-            <p>Những điều thú vị<br> có thể bạn chưa biết.</p>
-            <a href="#" class="cta-btn">Know More</a>
+            <p>Interesting things you may not know.</p>
+            <a href="#" class="cta-btn">Blogs</a>
         </div>
 
         <h2 class="sub-title">Explore with Stelio</h2>
         <div class="stories">
             <div>
                 <img src="images/explore-1.jpg"></img>
-                <p>Popular European countries with a budget of just $10,000</p>
+                <p><b>Best price for tonight</b></p>
+                <a href="#" class="exp-btn">Know More</a>
             </div>
             <div>
                 <img src="images/explore-2.jpg"></img>
-                <p>Traveled more than 100 Countries in less than a year</p>
+                <p><b>Lots of great deals for you</b></p>
+                <a href="#" class="exp-btn">Know More</a>
             </div>
             <div>
                 <img src="images/explore-3.jpg"></img>
-                <p>Best experience you get while traveling to Thailand</p>
+                <p><b>Have the best stays for each of your destinations</b></p>
+                <a href="#" class="exp-btn">Know More</a>
             </div>
         </div>
         <a href="#" class="start-btn">Start making money</a>
@@ -204,10 +271,51 @@
     </div>
     <script>
         var navBar = document.getElementById("navBar");
-
         function togglebtn() {
             navBar.classList.toggle("hidemenu");
         }
+
+        var list = document.getElementById("myDropdown")
+        function Dropdown() {
+            list.classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.hotel-btn')) {
+                var dropdowns = document.getElementById("myDropdown");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        var check = false
+        function Picktype(anchor) {
+            var icon = anchor.querySelector("i");
+            var line = document.getElementById("tab-active-bar");
+            const items = document.querySelectorAll(".tab-active-item");
+            if (anchor.className == "tab-item") {
+                icon.classList.replace("fa-regular", "fa-solid");
+                anchor.className = "tab-active-item";
+                for (const item of items) {
+                    item.classList.add("tab-item");
+                    item.classList.remove("tab-active-item");
+                    var icon = item.querySelector("i");
+                    icon.classList.replace("fa-solid", "fa-regular");
+                }
+                if (anchor.id == "tab-hourly")
+                    line.style.transform = "translateX(81px)";
+                else if (anchor.id == "tab-overnight")
+                    line.style.transform = "translateX(216px)";
+                else
+                    line.style.transform = "translateX(356px)";
+            }
+        }
+
+    </script>
+    <script>
     </script>
 </body>
 
