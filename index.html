@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stelio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/17dae1f014.js" crossorigin="anonymous"></script>
 </head>
 
@@ -160,70 +161,127 @@
         </div>
         <h2 class="sub-title">Sale Off</h2>
         <div class="saleoff">
-            <div class="sale-item">
-                <img src="images/villa.png">
-                <h3>Sol Villa</h3>
-                <div class="addr-item">
-                    <p>Hoi An</p>
-                    <i class="fa-solid fa-location-dot icon-address"></i>
-                </div>
-                <div class="rate-item">
-                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
-                    <i class="fa-solid fa-star icon-rating"></i>
-                </div>
-                <div class="price-item">
-                    <p>1.500.000Đ</p>
-                    <i class="fa-solid fa-money-bill"></i>
-                </div>
-            </div>
-            <div class="sale-item">
-                <img src="images/homestay.png">
-                <h3>Con Mèo Béo Home & Chill</h3>
-                <div class="addr-item">
-                    <p>Da Lat</p>
-                    <i class="fa-solid fa-location-dot icon-address"></i>
-                </div>
-                <div class="rate-item">
-                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
-                    <i class="fa-solid fa-star icon-rating"></i>
-                </div>
-                <div class="price-item">
-                    <p>1.500.000Đ</p>
-                    <i class="fa-solid fa-money-bill"></i>
-                </div>
-            </div>
-            <div class="sale-item">
-                <img src="images/hostel.png">
-                <h3>Fine9 Hostel</h3>
-                <div class="addr-item">
-                    <p>Phu Quoc</p>
-                    <i class="fa-solid fa-location-dot icon-address"></i>
-                </div>
-                <div class="rate-item">
-                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
-                    <i class="fa-solid fa-star icon-rating"></i>
-                </div>
-                <div class="price-item">
-                    <p>1.500.000Đ</p>
-                    <i class="fa-solid fa-money-bill"></i>
-                </div>
-            </div>
-            <div class="sale-item">
-                <img src="images/novotel.png">
-                <h3>Novotel</h3>
-                <div class="addr-item">
-                    <p>Sai Gon</p>
-                    <i class="fa-solid fa-location-dot icon-address"></i>
-                </div>
-                <div class="rate-item">
-                    <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
-                    <i class="fa-solid fa-star icon-rating"></i>
-                </div>
-                <div class="price-item">
-                    <p>1.500.000Đ</p>
-                    <i class="fa-solid fa-money-bill"></i>
-                </div>
-            </div>
+            <style>
+                html,
+                body {
+                  position: relative;
+                  height: 100%;
+                }
+            
+                body {
+                  background: #eee;
+                  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #000;
+                  margin: 0;
+                  padding: 0;
+                }
+            
+                .swiper {
+                  width: 100%;
+                  height: 100%;
+                }
+
+              </style>
+            </head>
+
+            <body>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sale-item">
+                            <img src="images/villa.png">
+                            <h3>Fine9 Hostel</h3>
+                            <div class="addr-item">
+                                <p>Phu Quoc</p>
+                                <i class="fa-solid fa-location-dot icon-address"></i>
+                            </div>
+                            <div class="rate-item">
+                                <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                                <i class="fa-solid fa-star icon-rating"></i>
+                            </div>
+                            <div class="price-item">
+                                <p>1.500.000Đ</p>
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sale-item">
+                            <img src="images/homestay.png">
+                            <h3>Fine9 Hostel</h3>
+                            <div class="addr-item">
+                                <p>Phu Quoc</p>
+                                <i class="fa-solid fa-location-dot icon-address"></i>
+                            </div>
+                            <div class="rate-item">
+                                <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                                <i class="fa-solid fa-star icon-rating"></i>
+                            </div>
+                            <div class="price-item">
+                                <p>1.500.000Đ</p>
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sale-item">
+                            <img src="images/hostel.png">
+                            <h3>Fine9 Hostel</h3>
+                            <div class="addr-item">
+                                <p>Phu Quoc</p>
+                                <i class="fa-solid fa-location-dot icon-address"></i>
+                            </div>
+                            <div class="rate-item">
+                                <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                                <i class="fa-solid fa-star icon-rating"></i>
+                            </div>
+                            <div class="price-item">
+                                <p>1.500.000Đ</p>
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sale-item">
+                            <img src="images/novotel.png">
+                            <h3>Fine9 Hostel</h3>
+                            <div class="addr-item">
+                                <p>Phu Quoc</p>
+                                <i class="fa-solid fa-location-dot icon-address"></i>
+                            </div>
+                            <div class="rate-item">
+                                <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                                <i class="fa-solid fa-star icon-rating"></i>
+                            </div>
+                            <div class="price-item">
+                                <p>1.500.000Đ</p>
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sale-item">
+                            <img src="images/homestay.png">
+                            <h3>Fine9 Hostel</h3>
+                            <div class="addr-item">
+                                <p>Phu Quoc</p>
+                                <i class="fa-solid fa-location-dot icon-address"></i>
+                            </div>
+                            <div class="rate-item">
+                                <p>5 <span style="color: #858585; font-size: 15px;">(12 Review)</span></p>
+                                <i class="fa-solid fa-star icon-rating"></i>
+                            </div>
+                            <div class="price-item">
+                                <p>1.500.000Đ</p>
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>                                
         </div>
 
         <div class="cta">
@@ -234,21 +292,68 @@
 
         <h2 class="sub-title">Explore with Stelio</h2>
         <div class="stories">
-            <div>
-                <img src="images/explore-1.jpg"></img>
-                <p><b>Best price for tonight</b></p>
-                <a href="#" class="exp-btn">Know More</a>
-            </div>
-            <div>
-                <img src="images/explore-2.jpg"></img>
-                <p><b>Lots of great deals for you</b></p>
-                <a href="#" class="exp-btn">Know More</a>
-            </div>
-            <div>
-                <img src="images/explore-3.jpg"></img>
-                <p><b>Have the best stays for each of your destinations</b></p>
-                <a href="#" class="exp-btn">Know More</a>
-            </div>
+            <style>
+                html,
+                body {
+                  position: relative;
+                  height: 100%;
+                }
+            
+                body {
+                  background: #eee;
+                  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #000;
+                  margin: 0;
+                  padding: 0;
+                }
+            
+                .swiper {
+                  width: 100%;
+                  height: 100%;
+                }
+
+              </style>
+            </head>
+
+            <body>
+                <!-- Swiper -->
+                <div class="swiper ExSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="images/explore-1.jpg"></img>
+                            <p><b>Best price for tonight</b></p>
+                            <a href="#" class="exp-btn">Know More</a>
+                        </div>
+                    </div>                    
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="images/explore-2.jpg"></img>
+                            <p><b>Lots of great deals for you</b></p>
+                            <a href="#" class="exp-btn">Know More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="images/explore-3.jpg"></img>
+                            <p><b>Lots of great deals for you</b></p>
+                            <a href="#" class="exp-btn">Know More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="images/explore-4.jpg"></img>
+                            <p><b>Lots of great deals for you</b></p>
+                            <a href="#" class="exp-btn">Know More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>                                
+        </div>                               
+        </div>
+
         </div>
         <a href="#" class="start-btn">Start making money</a>
 
@@ -315,8 +420,36 @@
         }
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-    </script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          autoplay:{
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <script>
+        var swiper = new Swiper(".ExSwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay:{
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    
 </body>
 
 </html>
